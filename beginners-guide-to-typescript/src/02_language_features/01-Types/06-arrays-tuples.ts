@@ -79,3 +79,17 @@ colorA = [1, 2]; // Error
 
 colorA = [100, 200, 300]; // OK
 colorA = [255, 255, 255, .5]; // OK
+
+/**
+ * Before TypeScript 4, you could not pass a variadic type parameter for a tuple
+ * as the shape of the tuple had to be defined. Now, let's check out the following code:
+ * Here, the type of NamedPoint2d is [string, number, number].
+ */
+type Point2d = [number, number];
+type NamedType<T extends unknown[]> = [string, ...T];
+type NamedPoint2d = NamedType<Point2d>;
+
+const point3: NamedPoint2d = ["Point: (1, 2)", 1, 2];
+
+type Point2dL = [x: number, y: number];
+type Point3dL = [x: number, y: number, z: number];
