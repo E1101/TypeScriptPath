@@ -1,0 +1,14 @@
+/*
+The noUnusedLocals and noUnusedParameter compiler options are
+used to detect variables or parameters that are not used and
+are therefore superfluous.
+*/
+{
+    "extends": "../tsconfig",
+    "compilerOptions": {
+        /* Strict Type-Checking Options */
+        "strict": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    }
+}

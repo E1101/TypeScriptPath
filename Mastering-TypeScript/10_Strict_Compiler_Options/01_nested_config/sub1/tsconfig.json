@@ -1,0 +1,21 @@
+/*
+Note that in order for the compiler to use this `tsconfig.json` file,
+we will need to change into the sub1 directory and make this the
+current directory, as follows;
+```
+  cd sub1
+```
+
+When compiling, it will also apply these settings to any source files found
+in any sub-directories. If a `tsconfig.json` file exists in a subdirectory,
+however, the compiler will ignore it.
+*/
+{
+    "extends": "../tsconfig",
+    "compilerOptions": {
+        /* Strict Type-Checking Options */
+        "outDir": "../dist",
+        "allowJs": true,
+        "strict": false
+    }
+}

@@ -1,0 +1,14 @@
+/*
+In order to use the `strictPropertyInitialization` option, we also
+need to enable the `strictNullChecks` option at the same time, or
+the compiler will return an error stating this.
+*/
+{
+    "extends": "../tsconfig",
+    "compilerOptions": {
+        /* Strict Type-Checking Options */
+        "strict": false,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true
+    }
+}

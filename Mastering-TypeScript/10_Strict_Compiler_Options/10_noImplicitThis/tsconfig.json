@@ -1,0 +1,12 @@
+/*
+The `noImplicitThis` compiler option is used to detect logic
+errors when the this variable is accessed incorrectly.
+*/
+{
+    "extends": "../tsconfig",
+    "compilerOptions": {
+        /* Strict Type-Checking Options */
+        "strict": false,
+        "noImplicitThis": true
+    }
+}

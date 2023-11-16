@@ -1,0 +1,15 @@
+/*
+The TypeScript compiler is able to re-use a `tsconfig.json` file in
+another directory when compiling code in the current directory.
+*/
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    }
+}

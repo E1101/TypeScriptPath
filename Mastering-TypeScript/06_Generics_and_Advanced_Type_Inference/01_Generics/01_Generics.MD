@@ -1,0 +1,4 @@
+what if we would like to write some code that will work with any sort of type, or any sort of interface or class definition? Perhaps a function that needs to find an element in a list, where the list could be made of strings, or numbers, or any other type. This is where generics come into play. Generics provide a mechanism to write code that does not need to specify a specific type. It is left up to the caller of these generic functions or classes to specify the type that the generic will be working with.
+
+As an example, suppose that we wanted to write a function that iterates over a given array of objects, and returns a concatenation of their values. So, given a list of numbers, say `[1,2,3]`, it should return the string `"1,2,3"`. Or, given a list of strings, say `["first", "second", "third"]`, it should return the string `"first, second, third"`.
+

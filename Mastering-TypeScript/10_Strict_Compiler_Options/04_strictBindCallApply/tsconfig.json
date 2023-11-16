@@ -1,0 +1,16 @@
+/*
+JavaScript provides the bind, call, and apply functions that are used to override the
+value of the `this` variable inside a function. When using the `bind`, `call`, and `apply`
+functions, we essentially provide a particular version of the object that the function
+should use as the value for this and then invoke the function with the parameters it requires.
+The `strictBindCallApply` option is used to ensure that we provide these function parameters
+with the correct types.
+*/
+{
+    "extends": "../tsconfig",
+    "compilerOptions": {
+        /* Strict Type-Checking Options */
+        "strict": false,
+        "strictBindCallApply": true
+    }
+}

@@ -1,0 +1,14 @@
+/*
+If a function has declared that it will return a value,
+then the noImplicitReturns compiler option will ensure
+that it does.
+*/
+{
+    "extends": "../tsconfig",
+    "compilerOptions": {
+        /* Strict Type-Checking Options */
+        "strict": false,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true
+    }
+}

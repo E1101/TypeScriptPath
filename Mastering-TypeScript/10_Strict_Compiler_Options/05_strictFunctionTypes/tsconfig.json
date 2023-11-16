@@ -1,0 +1,15 @@
+/*
+When we define types in TypeScript and then attempt to assign them
+to each other, the compiler makes sure that the types are consistent.
+Unfortunately, this strict typing rule did not apply correctly in some
+circumstances when dealing with functions. The `strictFunctionTypes`
+option corrects this behavior.
+*/
+{
+    "extends": "../tsconfig",
+    "compilerOptions": {
+        /* Strict Type-Checking Options */
+        "strict": false,
+        "strictFunctionTypes": false
+    }
+}

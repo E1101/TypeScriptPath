@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <!--
+    If we compile this TypeScript code, we will generate the following error:
+        error TS2304: Cannot find name 'CONTACT_EMAIL_ARRAY'
+
+    This error indicates that TypeScript does not know anything about the variable
+    named CONTACT_EMAIL_ARRAY. It does not even know that it is an array. Remember
+    that this array is a global variable and only exists once the HTML page is
+    up and running.
+
+    To solve our compilation problem, and make this CONTACT_EMAIL_ARRAY variable
+    visible to TypeScript, we will make use of a declaration file. Let's create a
+    file named globals.d.ts, that has the special `.d.ts` extension.
+    -->
+    <script src="GlobalLogger.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var CONTACT_EMAIL_ARRAY = [
+            "help@site.com",
+            "contactus@site.com",
+            "webmaster@site.com"
+        ]
+    </script>
+</body>
